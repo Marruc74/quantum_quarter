@@ -16,8 +16,8 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className="card">
-        <Header />
+      <Header />
+      <div className="card2">
         <BrowserRouter>
           <Routes>
             {routes.map(({ path, element }, index) => (

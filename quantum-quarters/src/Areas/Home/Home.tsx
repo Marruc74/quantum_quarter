@@ -1,5 +1,5 @@
 const Home = () => {
-  return <div>Home</div>;
+  return <div>Insert coin to enter multiversal randomness.</div>;
 };
 
 export default Home;

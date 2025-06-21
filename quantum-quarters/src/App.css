@@ -1,10 +1,9 @@
-@import "tailwindcss";
-
-#root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  padding: 2rem;
-  /* text-align: center; */
+html,
+body {
+  margin: 0;
+  padding-top: 40px; /* Adjust this value to match the height of your header */
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .fixed-header {
