@@ -1,0 +1,216 @@
+{
+    "prefixes": [
+        {
+            "text": "Rusty",
+            "tags": [
+                "seedy",
+                "creepy"
+            ]
+        },
+        {
+            "text": "Golden",
+            "tags": [
+                "noble",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Drunken",
+            "tags": [
+                "seedy",
+                "pirate"
+            ]
+        },
+        {
+            "text": "Whispering",
+            "tags": [
+                "creepy",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Gilded",
+            "tags": [
+                "noble"
+            ]
+        },
+        {
+            "text": "Old",
+            "tags": [
+                "cozy",
+                "seedy"
+            ]
+        },
+        {
+            "text": "Mother Alma's",
+            "tags": [
+                "cozy"
+            ]
+        },
+        {
+            "text": "Sir Varnan's",
+            "tags": [
+                "noble",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Shadowed",
+            "tags": [
+                "creepy",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Fey",
+            "tags": [
+                "fantasy",
+                "elvish"
+            ]
+        }
+    ],
+    "coreNouns": [
+        {
+            "text": "Goblet",
+            "tags": [
+                "noble",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Raven",
+            "tags": [
+                "creepy",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Mug",
+            "tags": [
+                "cozy",
+                "seedy"
+            ]
+        },
+        {
+            "text": "Coin",
+            "tags": [
+                "seedy",
+                "pirate"
+            ]
+        },
+        {
+            "text": "Kraken",
+            "tags": [
+                "pirate",
+                "sea"
+            ]
+        },
+        {
+            "text": "Wolf",
+            "tags": [
+                "wild",
+                "tough"
+            ]
+        },
+        {
+            "text": "Flame",
+            "tags": [
+                "fantasy",
+                "creepy"
+            ]
+        },
+        {
+            "text": "Lantern",
+            "tags": [
+                "cozy",
+                "mystical"
+            ]
+        },
+        {
+            "text": "Dream",
+            "tags": [
+                "elvish",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "Oath",
+            "tags": [
+                "fantasy",
+                "creepy"
+            ]
+        }
+    ],
+    "suffixes": [
+        {
+            "text": "Inn",
+            "tags": [
+                "general",
+                "cozy"
+            ]
+        },
+        {
+            "text": "Tavern",
+            "tags": [
+                "general",
+                "seedy"
+            ]
+        },
+        {
+            "text": "Alehouse",
+            "tags": [
+                "seedy",
+                "pirate"
+            ]
+        },
+        {
+            "text": "Rest",
+            "tags": [
+                "cozy",
+                "noble"
+            ]
+        },
+        {
+            "text": "Den",
+            "tags": [
+                "seedy",
+                "wild"
+            ]
+        },
+        {
+            "text": "Grotto",
+            "tags": [
+                "pirate",
+                "mystical"
+            ]
+        },
+        {
+            "text": "Watch",
+            "tags": [
+                "fantasy",
+                "military"
+            ]
+        },
+        {
+            "text": "of the North",
+            "tags": [
+                "cold",
+                "wild"
+            ]
+        },
+        {
+            "text": "of Eternal Flame",
+            "tags": [
+                "creepy",
+                "fantasy"
+            ]
+        },
+        {
+            "text": "on the Hill",
+            "tags": [
+                "cozy",
+                "rural"
+            ]
+        }
+    ]
+}
