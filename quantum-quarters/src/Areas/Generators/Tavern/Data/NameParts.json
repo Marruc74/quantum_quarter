@@ -1,216 +1,290 @@
 {
-    "prefixes": [
-        {
-            "text": "Rusty",
-            "tags": [
-                "seedy",
-                "creepy"
-            ]
-        },
-        {
-            "text": "Golden",
-            "tags": [
-                "noble",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Drunken",
-            "tags": [
-                "seedy",
-                "pirate"
-            ]
-        },
-        {
-            "text": "Whispering",
-            "tags": [
-                "creepy",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Gilded",
-            "tags": [
-                "noble"
-            ]
-        },
-        {
-            "text": "Old",
-            "tags": [
-                "cozy",
-                "seedy"
-            ]
-        },
-        {
-            "text": "Mother Alma's",
-            "tags": [
-                "cozy"
-            ]
-        },
-        {
-            "text": "Sir Varnan's",
-            "tags": [
-                "noble",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Shadowed",
-            "tags": [
-                "creepy",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Fey",
-            "tags": [
-                "fantasy",
-                "elvish"
-            ]
-        }
+    "adjectives": [
+        "Rusty",
+        "Drunken",
+        "Golden",
+        "Wailing",
+        "Jolly",
+        "Crooked",
+        "Sleepy",
+        "Hollow",
+        "Bent",
+        "Stormy",
+        "Grimy",
+        "Thirsty",
+        "Boiling",
+        "Bubbling",
+        "Twinkling",
+        "Old",
+        "Broken",
+        "Howling",
+        "Blackened",
+        "Grinning",
+        "Cracked",
+        "Lonely",
+        "Dusky",
+        "Frozen",
+        "Haunted",
+        "Wicked",
+        "Soggy",
+        "Lively",
+        "Mossy",
+        "Chipped"
     ],
-    "coreNouns": [
-        {
-            "text": "Goblet",
-            "tags": [
-                "noble",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Raven",
-            "tags": [
-                "creepy",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Mug",
-            "tags": [
-                "cozy",
-                "seedy"
-            ]
-        },
-        {
-            "text": "Coin",
-            "tags": [
-                "seedy",
-                "pirate"
-            ]
-        },
-        {
-            "text": "Kraken",
-            "tags": [
-                "pirate",
-                "sea"
-            ]
-        },
-        {
-            "text": "Wolf",
-            "tags": [
-                "wild",
-                "tough"
-            ]
-        },
-        {
-            "text": "Flame",
-            "tags": [
-                "fantasy",
-                "creepy"
-            ]
-        },
-        {
-            "text": "Lantern",
-            "tags": [
-                "cozy",
-                "mystical"
-            ]
-        },
-        {
-            "text": "Dream",
-            "tags": [
-                "elvish",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "Oath",
-            "tags": [
-                "fantasy",
-                "creepy"
-            ]
-        }
+    "nouns": [
+        "Goblet",
+        "Troll",
+        "Candle",
+        "Axe",
+        "Cauldron",
+        "Raven",
+        "Gambler",
+        "Stag",
+        "Boot",
+        "Fiddle",
+        "Grog",
+        "Tankard",
+        "Bard",
+        "Forge",
+        "Boar",
+        "Drum",
+        "Wyrm",
+        "Clover",
+        "Mug",
+        "Anchor",
+        "Witch",
+        "Root",
+        "Spindle",
+        "Horn",
+        "Chalice",
+        "Beard",
+        "Torch",
+        "Thorn",
+        "Lute",
+        "Snail"
     ],
-    "suffixes": [
-        {
-            "text": "Inn",
-            "tags": [
-                "general",
-                "cozy"
-            ]
-        },
-        {
-            "text": "Tavern",
-            "tags": [
-                "general",
-                "seedy"
-            ]
-        },
-        {
-            "text": "Alehouse",
-            "tags": [
-                "seedy",
-                "pirate"
-            ]
-        },
-        {
-            "text": "Rest",
-            "tags": [
-                "cozy",
-                "noble"
-            ]
-        },
-        {
-            "text": "Den",
-            "tags": [
-                "seedy",
-                "wild"
-            ]
-        },
-        {
-            "text": "Grotto",
-            "tags": [
-                "pirate",
-                "mystical"
-            ]
-        },
-        {
-            "text": "Watch",
-            "tags": [
-                "fantasy",
-                "military"
-            ]
-        },
-        {
-            "text": "of the North",
-            "tags": [
-                "cold",
-                "wild"
-            ]
-        },
-        {
-            "text": "of Eternal Flame",
-            "tags": [
-                "creepy",
-                "fantasy"
-            ]
-        },
-        {
-            "text": "on the Hill",
-            "tags": [
-                "cozy",
-                "rural"
-            ]
-        }
+    "colors": [
+        "Crimson",
+        "Silver",
+        "Emerald",
+        "Ashen",
+        "Ivory",
+        "Obsidian",
+        "Amber",
+        "Sable",
+        "Scarlet",
+        "Jade",
+        "Copper",
+        "Bone",
+        "Onyx",
+        "Azure",
+        "Brass",
+        "Pale",
+        "Verdant",
+        "Dusky",
+        "Charcoal",
+        "Golden",
+        "Frosted",
+        "Mossy",
+        "Rusted",
+        "Night",
+        "Moonlit",
+        "Dawn",
+        "Iron",
+        "Pearl",
+        "Blood",
+        "Cinder"
+    ],
+    "animals": [
+        "Wolf",
+        "Owl",
+        "Drake",
+        "Fox",
+        "Serpent",
+        "Fang",
+        "Hawk",
+        "Hound",
+        "Bat",
+        "Vulture",
+        "Crow",
+        "Panther",
+        "Ram",
+        "Boar",
+        "Spider",
+        "Jackal",
+        "Kraken",
+        "Cat",
+        "Newt",
+        "Toad",
+        "Stag",
+        "Weasel",
+        "Swan",
+        "Crab",
+        "Wasp",
+        "Moth",
+        "Worm",
+        "Cobra",
+        "Eagle",
+        "Ferret"
+    ],
+    "verbs": [
+        "Howling",
+        "Laughing",
+        "Dancing",
+        "Singing",
+        "Burning",
+        "Weeping",
+        "Winking",
+        "Snoring",
+        "Drinking",
+        "Groaning",
+        "Stumbling",
+        "Roaring",
+        "Crying",
+        "Leaping",
+        "Gnawing",
+        "Sneaking",
+        "Tumbling",
+        "Shivering",
+        "Growling",
+        "Grinning",
+        "Brawling",
+        "Whispering",
+        "Mumbling",
+        "Muttering",
+        "Belching",
+        "Wandering",
+        "Slumbering",
+        "Cackling",
+        "Scheming",
+        "Twitching"
+    ],
+    "titles": [
+        "Captain",
+        "Witch",
+        "Baron",
+        "Priest",
+        "Sir",
+        "Queen",
+        "Cook",
+        "Madam",
+        "Barkeep",
+        "Lady",
+        "Lord",
+        "King",
+        "Admiral",
+        "Father",
+        "Maester",
+        "Knight",
+        "Thane",
+        "Seer",
+        "Shaman",
+        "Prophet",
+        "Hunter",
+        "Drunkard",
+        "General",
+        "Scholar",
+        "Jester",
+        "Warden",
+        "Innkeep",
+        "Dame",
+        "Merchant",
+        "Thief"
+    ],
+    "names": [
+        "Crow",
+        "Thorn",
+        "Vex",
+        "Elara",
+        "Snag",
+        "Flick",
+        "Dren",
+        "Mara",
+        "Bork",
+        "Lyra",
+        "Ned",
+        "Grim",
+        "Ash",
+        "Bram",
+        "Zorn",
+        "Pip",
+        "Laz",
+        "Siv",
+        "Mug",
+        "Jorra",
+        "Zig",
+        "Fen",
+        "Hob",
+        "Oona",
+        "Garn",
+        "Tass",
+        "Rook",
+        "Klem",
+        "Varn",
+        "Tib"
+    ],
+    "locations": [
+        "Hollow Hearth",
+        "Whispering Vale",
+        "Deadman's Rest",
+        "The Gloam",
+        "Fogfen",
+        "Ashfall Point",
+        "Starling Hollow",
+        "Broken Bridge",
+        "Gallows Hill",
+        "The Shrouded Glen",
+        "Sunken Lane",
+        "Moonshade Marsh",
+        "The Bleeding Tree",
+        "Twilight Knoll",
+        "Stonefang Hollow",
+        "The Frozen Path",
+        "Blighted Crossroads",
+        "The Cracked Wall",
+        "Flickering Wharf",
+        "Bloodroot Den",
+        "The Withered Moor",
+        "Iron Hollow",
+        "The Crooked Tooth",
+        "Echoing Gulch",
+        "Saltmarsh Bend",
+        "The Moss Pit",
+        "Goblin's Leap",
+        "The Singing Brook",
+        "The Sooty Spire",
+        "Snailhill"
+    ],
+    "punNames": [
+        "Brew & Chew",
+        "Mead Me Halfway",
+        "Ale’s Well",
+        "The Pour House",
+        "Inn the Mood",
+        "Ales from the Crypt",
+        "The Grogfather",
+        "Mead or Alive",
+        "The Drip Inn",
+        "Stew It Yourself",
+        "The Last Draught",
+        "Ye Olde Boozy",
+        "Pitcher Perfect",
+        "Knightcap",
+        "Hops & Dreams",
+        "The Sip Happens",
+        "Tankard Trauma",
+        "The Ale Abides",
+        "Witch Better Have My Brew",
+        "The Dizzy Lizard",
+        "Pour Decisions",
+        "The Mug Life",
+        "Bard & Booze",
+        "The Spilled Pint",
+        "Merry Meedings",
+        "The Rum Deal",
+        "Inn Decision",
+        "The Draught Horse",
+        "The Goblet Offense",
+        "Dungeons & Draughts"
     ]
 }
