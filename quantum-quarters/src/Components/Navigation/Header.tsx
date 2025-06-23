@@ -1,6 +1,15 @@
 import { Menubar } from "primereact/menubar";
+import {
+  useAppDispatch,
+  useAppSelector,
+  type AppDispatch,
+  type RootState,
+} from "../../Redux/Store";
+import { setTheme } from "../../Redux/BaseSlice";
+import type { FullState } from "../../Redux/Types/Store";
 
 const Header = () => {
+  const dispatch: AppDispatch = useAppDispatch();
   const items = [
     {
       label: "Generators",
@@ -14,13 +23,29 @@ const Header = () => {
       ],
     },
   ];
+  const themes = [
+    { id: "grimdark", name: "Grimdark Steel" },
+    { id: "galactic", name: "Galactic Neon" },
+    { id: "mystic", name: "Mystic Scroll" },
+    { id: "pocket", name: "Pocket Adventure" },
+    { id: "noir", name: "Cinema Noir" },
+  ];
+
+  const { theme } = useAppSelector(
+    (state: RootState) => (state as FullState).base
+  );
+
+  // useEffect(() => {
+  //   document.body.className = ""; // Remove previous
+  //   document.body.classList.add(`theme-${theme}`);
+  // }, [theme]);
+
+  const onChangeTheme = (newTheme: string) => {
+    dispatch(setTheme(newTheme));
+  };
 
   const start = (
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
+    <div className="flex">
       {/* <a href="/">
         <img
           alt="logo"
@@ -29,23 +54,29 @@ const Header = () => {
           className="mr-2"
         ></img>
       </a> */}
-      <a
-        href="/"
-        style={{
-          textDecoration: "none",
-        }}
-      >
-        <span
-          id="text"
-          style={{
-            fontSize: "30px",
-            paddingLeft: "10px",
-            paddingRight: "20px",
-          }}
-        >
+      <a href="/" className="no-underline" style={{ color: "var(--text)" }}>
+        <span id="text" className="text-3xl pl-2 pr-5">
           Quantum Quarters
         </span>
       </a>
+    </div>
+  );
+
+  const end = (
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
+      <div>
+        <select value={theme} onChange={(e) => onChangeTheme(e.target.value)}>
+          {themes.map((t) => (
+            <option key={t.id} value={t.id}>
+              {t.name}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 
@@ -53,15 +84,18 @@ const Header = () => {
     <div
       className="fixed-header"
       style={{
-        backgroundColor: "#c5d4f7",
+        backgroundColor: "var(--accent)",
+        color: "var(--text)",
       }}
     >
       <Menubar
         model={items}
         start={start}
-        // end={end}
+        end={end}
         style={{
-          backgroundColor: "#c5d4f7",
+          backgroundColor: "var(--accent)",
+          color: "var(--text)",
+          border: "none",
         }}
       />
     </div>
