@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div>
       Insert coin to enter multiversal randomness.
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <button className="bg-sky-500 hover:bg-sky-700 ...">Save changes</button>
       <button className="light-theme bg-test-color">Test</button>
       <button style={{ backgroundColor: "var(--color-test-color)" }}>
@@ -44,7 +44,7 @@ const Home = () => {
         <div className="bg-sky-900">a</div>
         <div className="bg-sky-950">a</div>
         <div className="bg-mint-500">a</div>
-      </div>
+      </div> */}
     </div>
   );
 };

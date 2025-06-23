@@ -39,7 +39,6 @@ function AppContent({ routes }: { routes: ReturnType<typeof getRoutes> }) {
     <>
       <Header />
       <div>
-        Theme: {theme}
         <div className={`card2`}>
           <Routes>
             {routes.map(({ path, element }, index) => (
