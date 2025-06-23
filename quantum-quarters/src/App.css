@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-test-color2: #ff0000;
+}
+
+@layer base {
+  :root {
+    --color-primary: oklch(84.649% 0.22712 130.426); /* Default (light) theme */
+    --color-bg: #fff;
+    --color-text: #222;
+  }
+
+  .theme-dark {
+    --color-primary: oklch(
+      46.856% 0.30296 271.609
+    ); /* Use a different value for dark */
+    --color-bg: #18181b;
+    --color-text: #fff;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary) !important;
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-app {
+    background-color: var(--color-bg);
+  }
+  .text-app {
+    color: var(--color-text);
+  }
+
+  .theme-mint {
+    --color-primary: oklch(72% 0.11 178);
+    --color-bg: #e0fff4;
+    --color-text: #0a3d31;
+  }
+}
 html,
 body {
   margin: 0;

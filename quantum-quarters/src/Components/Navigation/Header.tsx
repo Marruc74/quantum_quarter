@@ -1,8 +1,15 @@
 import { Menubar } from "primereact/menubar";
-import { useEffect, useState } from "react";
+import {
+  useAppDispatch,
+  useAppSelector,
+  type AppDispatch,
+  type RootState,
+} from "../../Redux/Store";
+import { setTheme } from "../../Redux/BaseSlice";
+import type { FullState } from "../../Redux/Types/Store";
 
 const Header = () => {
-  const [theme, setTheme] = useState("grimdark");
+  const dispatch: AppDispatch = useAppDispatch();
   const items = [
     {
       label: "Generators",
@@ -24,10 +31,18 @@ const Header = () => {
     { id: "noir", name: "Cinema Noir" },
   ];
 
-  useEffect(() => {
-    document.body.className = ""; // Remove previous
-    document.body.classList.add(`theme-${theme}`);
-  }, [theme]);
+  const { theme } = useAppSelector(
+    (state: RootState) => (state as FullState).base
+  );
+
+  // useEffect(() => {
+  //   document.body.className = ""; // Remove previous
+  //   document.body.classList.add(`theme-${theme}`);
+  // }, [theme]);
+
+  const onChangeTheme = (newTheme: string) => {
+    dispatch(setTheme(newTheme));
+  };
 
   const start = (
     <div className="flex">
@@ -54,7 +69,7 @@ const Header = () => {
       }}
     >
       <div>
-        <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+        <select value={theme} onChange={(e) => onChangeTheme(e.target.value)}>
           {themes.map((t) => (
             <option key={t.id} value={t.id}>
               {t.name}
