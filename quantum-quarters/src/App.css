@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 html,
 body {
   margin: 0;
@@ -12,6 +14,5 @@ body {
   left: 0; /* Align it to the left */
   width: 100%; /* Make it span the full width */
   z-index: 1000; /* Ensure it stays above other elements */
-  background-color: #c5d4f7; /* Match the header's background color */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }

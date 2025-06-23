@@ -1,6 +1,10 @@
 import { useState } from "react";
 import nameParts from "./Data/NameParts.json";
+import styleParts from "./Data/StyleParts.json";
+import interiorParts from "./Data/Interior.json";
 import { TavernNameTypes, type TavernNameType } from "./Utils/TavernHelpers";
+import { TavernStyleTypes, type TavernStyleType } from "./Utils/TavernHelpers";
+import { InteriorTypes, type InteriorType } from "./Utils/TavernHelpers";
 
 // Use a regular function for random
 function random<T>(arr: T[]): T {
@@ -9,6 +13,33 @@ function random<T>(arr: T[]): T {
 
 const Tavern = () => {
   const [tavernName, setTavernName] = useState<string>("");
+  const [tavernStyle, setTavernStyle] = useState<string>("");
+  const [walls, setWalls] = useState<string>("");
+  const [furniture, setFurniture] = useState<string>("");
+  const [lighting, setLighting] = useState<string>("");
+  const [scents, setScents] = useState<string>("");
+  const [specialFeatures, setSpecialFeatures] = useState<string>("");
+
+  const generateTavernStyle = (type: TavernStyleType) => {
+    switch (type) {
+      case "adj_culture_type":
+        return `${random(styleParts.adjectives)} ${random(
+          styleParts.cultures
+        )} ${random(styleParts.types)}`;
+      case "desc_theme_type":
+        return `${random(styleParts.adjectives)} ${random(
+          styleParts.themes
+        )} ${random(styleParts.types)}`;
+      case "atmosphere_type":
+        return `${random(styleParts.adjectives)} ${random(styleParts.types)}`;
+      case "location_type":
+        return `${random(styleParts.locations)} ${random(styleParts.types)}`;
+      case "material_type":
+        return `${random(styleParts.materials)} ${random(styleParts.types)}`;
+      default:
+        return "";
+    }
+  };
 
   const generateTavernName = (type: TavernNameType) => {
     switch (type) {
@@ -36,12 +67,25 @@ const Tavern = () => {
   const onGenerate = () => {
     const randomType = random([...TavernNameTypes]) as TavernNameType;
     setTavernName(generateTavernName(randomType));
+    const randomStyle = random([...TavernStyleTypes]) as TavernStyleType;
+    setTavernStyle(generateTavernStyle(randomStyle));
+    setWalls(random(interiorParts.walls));
+    setFurniture(random(interiorParts.furniture));
+    setLighting(random(interiorParts.lighting));
+    setScents(random(interiorParts.scents));
+    setSpecialFeatures(random(interiorParts.specialFeatures));
   };
 
   return (
     <div>
       <button onClick={onGenerate}>Generate</button>
       <div>{tavernName}</div>
+      <div>{tavernStyle}</div>
+      <div>Walls: {walls}</div>
+      <div>Furniture: {furniture}</div>
+      <div>Lighting: {lighting}</div>
+      <div>Scents: {scents}</div>
+      <div>Special Features: {specialFeatures}</div>
     </div>
   );
 };
